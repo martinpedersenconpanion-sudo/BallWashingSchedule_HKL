@@ -52,7 +52,6 @@
     <table id="schedule" class="display" style="width:100%">
         <thead>
             <tr>
-                <th>Tröjnummer</th>
                 <th>Pellejöns</th>
                 <th>Position</th>
                 <th>Ålder</th>
@@ -82,7 +81,6 @@
             const tbody = $("#schedule tbody");
             results.data.forEach(player => {
                 const row = `<tr>
-                    <td>${player.Number ?? ""}</td>
                     <td>${player.Name ?? ""}</td>
                     <td>${player.Position ?? ""}</td>
                     <td>${player.Age ?? ""}</td>
@@ -104,5 +102,6 @@
 
 </body>
 </html>
+
 
 
